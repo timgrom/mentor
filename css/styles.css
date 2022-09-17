@@ -1,0 +1,210 @@
+/* цвет заголовков #212121 */
+/* цвет основного текста #757575 */
+/* белый #FFFFFF */
+/* цвет акцент #2196F3 */
+/* певичный цвет фона #E5E5E5*/
+/* вторичный цвет фона #F5F4FA */
+/* фон героя и футера #2F303A*/
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --hero-footer-background: #2f303a;
+  --primary-background: #e5e5e5;
+  --secondary-background: #f5f4fa;
+}
+/* */
+body {
+  background: #ffffff;
+}
+/* ссылки */
+a {
+  text-decoration: none; /* Убираем подчёркивание */
+}
+a:not(.logo):hover {
+  color: #2196f3;
+}
+/* Убираем маркеры */
+li {
+  list-style-type: none;
+}
+/* Logo */
+.logo {
+  color: #000000;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: #2196f3;
+  font-family: "Oleo Script";
+}
+/* панель навигации */
+header > nav {
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  background: #ffffff;
+}
+/* ссылка Студия */
+.nav-studio {
+  position: absolute;
+  width: 49px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+/* ссылка Портфолио */
+.nav-portfolio {
+  position: absolute;
+  width: 77px;
+  height: 16px;
+  left: 552px;
+  top: 32px;
+}
+/* ссылка Контакты */
+.nav-contacts {
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: 679px;
+  top: 32px;
+}
+/* почта в хедере */
+.mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  width: 135px;
+  height: 16px;
+  left: 1078px;
+  top: 32px;
+}
+/* телефон в хедере */
+.tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 1263px;
+  top: 32px;
+}
+/* */
+/* секция герой */
+.hero {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
+  background: var(--hero-footer-background);
+}
+/* заголовок секции герой*/
+h1 {
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+/* секция особенности */
+.features {
+  position: absolute;
+  width: 1600px;
+  height: 1449px;
+  left: 0px;
+  top: 600px;
+  background-color: var(--primary-background);
+}
+h3 {
+  color: var(--primary-text-color);
+  height: 16px;
+  width: 270px;
+  left: 0px;
+  top: 0px;
+  border-radius: nullpx;
+}
+
+p {
+  color: var(--secondary-text-color);
+}
+/* секция чем мы занимаемся*/
+.work {
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+}
