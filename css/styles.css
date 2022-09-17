@@ -51,7 +51,7 @@ li {
   font-family: "Oleo Script";
 }
 /* панель навигации */
-header > nav {
+header {
   position: absolute;
   width: 1600px;
   height: 80px;
@@ -64,35 +64,37 @@ header > nav {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--accent-color);
 
   background: #ffffff;
 }
-/* ссылка Студия */
+/* расположение ссылки Студия */
 .nav-studio {
   position: absolute;
   width: 49px;
   height: 16px;
   left: 453px;
   top: 32px;
+  color: var(--primary-text-color);
 }
-/* ссылка Портфолио */
+/* расположение ссылки Портфолио */
 .nav-portfolio {
   position: absolute;
   width: 77px;
   height: 16px;
   left: 552px;
   top: 32px;
+  color: var(--primary-text-color);
 }
-/* ссылка Контакты */
+/* расположение ссылки Контакты */
 .nav-contacts {
   position: absolute;
   width: 68px;
   height: 16px;
   left: 679px;
   top: 32px;
+  color: var(--primary-text-color);
 }
-/* почта в хедере */
+/* стиль почты в хедере */
 .mail {
   font-family: "Roboto";
   font-style: normal;
@@ -100,6 +102,7 @@ header > nav {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 
   position: absolute;
   width: 135px;
@@ -107,7 +110,7 @@ header > nav {
   left: 1078px;
   top: 32px;
 }
-/* телефон в хедере */
+/* стиль телефона в хедере */
 .tel {
   font-family: "Roboto";
   font-style: normal;
@@ -115,6 +118,7 @@ header > nav {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 
   position: absolute;
   width: 122px;
@@ -139,7 +143,8 @@ h1 {
   width: 696px;
   height: 120px;
   left: 452px;
-  top: 280px;
+  top: 200px;
+  margin: 0px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -159,23 +164,17 @@ button {
   width: 200px;
   height: 50px;
   left: 700px;
-  top: 430px;
+  top: 350px;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  /* текст кнопки */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 188% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 
   color: #ffffff;
 }
@@ -185,26 +184,79 @@ button {
   width: 1600px;
   height: 1449px;
   left: 0px;
-  top: 600px;
+  top: 680px;
   background-color: var(--primary-background);
 }
+/* скрываем h2 "наши особенности" */
+.title-invisible {
+  display: none;
+}
+/* выравниваем тест*/
+.in-line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+
+  position: absolute;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 94px;
+}
 h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primary-text-color);
-  height: 16px;
-  width: 270px;
-  left: 0px;
-  top: 0px;
-  border-radius: nullpx;
 }
 
 p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* секция чем мы занимаемся*/
-.work {
+/* секция "чем мы занимаемся"*/
+.works {
   position: absolute;
   width: 1170px;
   height: 386px;
   left: 215px;
   top: 969px;
+}
+.works-title {
+  position: absolute;
+  width: 376px;
+  height: 42px;
+  left: 397px;
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px;
+
+  color: var(--primary-text-color);
+}
+.works-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  margin: 0px;
+  margin-top: 92px;
 }
