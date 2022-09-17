@@ -18,6 +18,7 @@
 body {
   background: #ffffff;
 }
+
 /* ссылки */
 a {
   text-decoration: none; /* Убираем подчёркивание */
@@ -25,10 +26,12 @@ a {
 a:not(.logo):hover {
   color: #2196f3;
 }
+
 /* Убираем маркеры */
 li {
   list-style-type: none;
 }
+
 /* Logo */
 .logo {
   color: #000000;
@@ -50,6 +53,7 @@ li {
   color: #2196f3;
   font-family: "Oleo Script";
 }
+
 /* панель навигации */
 header {
   position: absolute;
@@ -67,6 +71,7 @@ header {
 
   background: #ffffff;
 }
+
 /* расположение ссылки Студия */
 .nav-studio {
   position: absolute;
@@ -76,6 +81,7 @@ header {
   top: 32px;
   color: var(--primary-text-color);
 }
+
 /* расположение ссылки Портфолио */
 .nav-portfolio {
   position: absolute;
@@ -85,6 +91,7 @@ header {
   top: 32px;
   color: var(--primary-text-color);
 }
+
 /* расположение ссылки Контакты */
 .nav-contacts {
   position: absolute;
@@ -94,6 +101,7 @@ header {
   top: 32px;
   color: var(--primary-text-color);
 }
+
 /* стиль почты в хедере */
 .mail {
   font-family: "Roboto";
@@ -110,6 +118,7 @@ header {
   left: 1078px;
   top: 32px;
 }
+
 /* стиль телефона в хедере */
 .tel {
   font-family: "Roboto";
@@ -127,6 +136,7 @@ header {
   top: 32px;
 }
 /* */
+
 /* секция герой */
 .hero {
   position: absolute;
@@ -137,6 +147,7 @@ header {
 
   background: var(--hero-footer-background);
 }
+
 /* заголовок секции герой*/
 h1 {
   position: absolute;
@@ -151,8 +162,6 @@ h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -178,19 +187,22 @@ button {
 
   color: #ffffff;
 }
+
 /* секция особенности */
 .features {
   position: absolute;
   width: 1600px;
-  height: 1449px;
+  height: 769px;
   left: 0px;
   top: 680px;
   background-color: var(--primary-background);
 }
+
 /* скрываем h2 "наши особенности" */
 .title-invisible {
   display: none;
 }
+
 /* выравниваем тест*/
 .in-line {
   display: flex;
@@ -205,7 +217,7 @@ button {
   left: 215px;
   top: 94px;
 }
-h3 {
+.features-title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -225,6 +237,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
 /* секция "чем мы занимаемся"*/
 .works {
   position: absolute;
@@ -259,4 +272,117 @@ p {
   gap: 30px;
   margin: 0px;
   margin-top: 92px;
+}
+
+/* секция "наша команда" */
+.team {
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+
+  background: var(--secondary-background);
+}
+
+/* заголовок "наша команда" */
+.team-title {
+  position: absolute;
+  width: 264px;
+  height: 42px;
+  left: 668px;
+  top: 94px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px;
+
+  color: var(--primary-text-color);
+}
+.team-cards {
+  position: absolute;
+  width: 1170px;
+  height: 368px;
+  left: 215px;
+  top: 186px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  margin: 0px;
+}
+.card-shadows {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+  margin-top: 30px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.card-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+
+  background: var(--hero-footer-background);
+}
+footer.logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 60px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+footer.logo-accent {
+  color: #2196f3;
+  font-family: "Oleo Script";
 }
