@@ -15,15 +15,16 @@
   --secondary-background: #f5f4fa;
 }
 /* */
-body {
-  background: #ffffff;
+body:not(.logo, .footer-logo) {
+  font-family: Roboto, sans-serif;
 }
 
 /* ссылки */
 a {
   text-decoration: none; /* Убираем подчёркивание */
 }
-a:not(.logo):hover {
+a:not(.logo, .footer-logo):hover,
+a:focus {
   color: #2196f3;
 }
 
@@ -34,6 +35,7 @@ li {
 
 /* Logo */
 .logo {
+  font-family: Raleway, sans-serif;
   color: #000000;
   position: absolute;
   width: 145px;
@@ -41,7 +43,6 @@ li {
   left: 215px;
   top: 24px;
 
-  font-family: "Oleo Script";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -50,8 +51,8 @@ li {
   letter-spacing: 0.03em;
 }
 .logo-accent {
+  font-family: Raleway, sans-serif;
   color: #2196f3;
-  font-family: "Oleo Script";
 }
 
 /* панель навигации */
@@ -364,7 +365,7 @@ footer {
 
   background: var(--hero-footer-background);
 }
-footer.logo {
+.footer-logo {
   position: absolute;
   width: 145px;
   height: 31px;
@@ -382,7 +383,50 @@ footer.logo {
 
   color: #ffffff;
 }
-footer.logo-accent {
+.footerLogo-accent {
   color: #2196f3;
   font-family: "Oleo Script";
+}
+address {
+  position: absolute;
+  width: 231px;
+  height: 81px;
+  left: 215px;
+  top: 111px;
+}
+.map {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.address-mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-list {
+  margin: 0px;
+  padding: 0px;
 }
