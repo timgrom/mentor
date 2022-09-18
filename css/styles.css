@@ -63,7 +63,6 @@ header {
   left: 0px;
   top: 0px;
 
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -105,7 +104,6 @@ header {
 
 /* стиль почты в хедере */
 .mail {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -122,7 +120,6 @@ header {
 
 /* стиль телефона в хедере */
 .tel {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -158,7 +155,6 @@ h1 {
   top: 200px;
   margin: 0px;
 
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -180,7 +176,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   /* текст кнопки */
-  font-family: "Roboto";
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -219,7 +215,6 @@ button {
   top: 94px;
 }
 .features-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -230,7 +225,6 @@ button {
 }
 
 p {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -328,7 +322,6 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 .card-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -342,7 +335,6 @@ p {
   color: var(--primary-text-color);
 }
 .card-text {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -372,7 +364,7 @@ footer {
   left: 215px;
   top: 60px;
 
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -385,7 +377,7 @@ footer {
 }
 .footerLogo-accent {
   color: #2196f3;
-  font-family: "Oleo Script";
+  font-family: "Raleway", sans-serif;
 }
 address {
   position: absolute;
@@ -395,7 +387,6 @@ address {
   top: 111px;
 }
 .map {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -406,7 +397,6 @@ address {
   color: #ffffff;
 }
 .address-mail {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -417,7 +407,6 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 .address-tel {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
